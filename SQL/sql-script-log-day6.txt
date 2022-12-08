@@ -1,0 +1,35 @@
+08:19:56	create database demo	1 row(s) affected	0.032 sec
+
+08:19:58	use demo	0 row(s) affected	0.000 sec
+
+08:20:00	create table student (id int primary key, name varchar(50) not null)	0 row(s) affected	0.031 sec
+
+08:20:12	describe student	2 row(s) returned	0.000 sec / 0.000 sec
+
+08:23:30	drop table student	0 row(s) affected	0.015 sec
+
+08:23:58	create table student(id int primary key auto_increment, name varchar(50) not null)	0 row(s) affected	0.031 sec
+
+08:24:02	describe student	2 row(s) returned	0.016 sec / 0.000 sec
+
+08:26:17	insert into student (name) values ('Tim')	1 row(s) affected	0.031 sec
+
+08:26:17	select * from student LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+
+08:26:55	insert into student values (3, 'Wayne')	1 row(s) affected	0.031 sec
+
+08:27:00	select * from student LIMIT 0, 1000	2 row(s) returned	0.000 sec / 0.000 sec
+
+08:27:24	insert into student (name) values ('Patrick')	1 row(s) affected	0.031 sec
+
+08:27:27	select * from student LIMIT 0, 1000	3 row(s) returned	0.000 sec / 0.000 sec
+
+08:27:51	insert into student (name) values ('Patrick')	1 row(s) affected	0.015 sec
+
+08:27:54	select * from student LIMIT 0, 1000	4 row(s) returned	0.000 sec / 0.000 sec
+
+08:28:49	alter table student auto_increment=50	0 row(s) affected Records: 0  Duplicates: 0  Warnings: 0	0.015 sec
+
+08:28:52	insert into student (name) values ('Patrick')	1 row(s) affected	0.000 sec
+
+08:28:54	select * from student LIMIT 0, 1000	5 row(s) returned	0.000 sec / 0.000 sec
